@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Karayolları ve Köprüler",
+        "date": "25.11.1997",
+        "desc": "Karayolları Köprü ve Tünel projelerimiz ile hizmetinizdeyiz !",
+        "command": 0,
+        "link": "blog-1",
+        "textdetail": "lorem lorem lorem",
+        "img":"https://media.istockphoto.com/id/1448405703/photo/convoy-of-industrial-big-rigs-semi-trucks-with-semi-trailers-driving-with-cargo-on-the.webp?b=1&s=612x612&w=0&k=20&c=ed1XSPvotL9vMUcqxcP-GEIIRd1PLV-28BmN9RnIhXo="
+    },
+    {
+        "id": 2,
+        "title": "Metro Projeleri",
+        "date": "25.11.1997",
+        "desc": "Metro projelerimiz ile hizmetinizdeyiz !",
+        "command": 0,
+        "link": "blog-2",
+        "textdetail": "lorem lorem lorem2",
+        "img": "https://media.istockphoto.com/id/1181249621/photo/electric-passenger-train-drives-at-high-speed-among-urban-landscape.webp?b=1&s=612x612&w=0&k=20&c=RhA56-TRuhZRBqEqHzUHGTyhq88b157yptfthwoXkGg="
+    },
+    {
+        "id": 3,
+        "title": "Havaalanı Projeleri",
+        "date": "25.11.1997",
+        "desc": "Havaalanı projelerimiz ile hizmetinizdeyiz !",
+        "command": 0,
+        "link": "blog-2",
+        "textdetail": "lorem lorem lorem2",
+        "img": "https://cdn.pixabay.com/photo/2020/07/09/14/10/airport-5387490_1280.jpg"
+    }
+]

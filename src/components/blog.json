@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "text": "Oztopcular Hafriyat Olarak",
+        "date": "25.11.1997",
+        "command": 0,
+        "title": "İnşaat",
+        "link": "blog-1",
+        "textdetail": "İnşaat bölgesinde yapacağımız çalışmalarda bölge halkına zarar vermeyecek şekilde ve en üst seviyede güvenlik ortamında gerçekleştirmek, yasal gerekliliklerden taviz vermeden insanlara ve çevreye saygılı temeller oluşturmak , müşterilerimize daima dürüst olmak ve onların isteklerinden sapma yapmamak temel ilkemizdir. Öztopçular Hafriyat’ın geleceğe dair vizyonu’nu oluşturmaktadır.",
+        "img": "https://cdn.pixabay.com/photo/2016/11/29/04/15/digger-1867268_1280.jpg"
+    },
+    {
+        "id": 2,
+        "text": "Oztopcular Hafriyat Olarak",
+        "date": "25.11.1997",
+        "command": 0,
+        "title": "Faaliyet Alanları",
+        "link": "blog-2",
+        "textdetail": "HAFRİYAT İŞLERİ YIKIM İŞLERİ ALTYAPI VE TAAHHÜT İŞLEMLERİ DOLGU TESVİYE ÇEVRE DÜZENLEME STABİLİZE MALZEME ELENMİŞ VE GÜBERELİ BAHÇE TOPRAĞI PEYSAJ İŞLERİ HER ÇEŞİT ELENMİŞ KUM KIRMA TAŞ VE BALANS MALEZEMESİ ile faaliyet göstermekteyiz.",
+        "img": "https://cdn.pixabay.com/photo/2016/11/21/16/37/loader-1846346_1280.jpg"
+    }
+]
