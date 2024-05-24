@@ -1,10 +1,14 @@
 /* eslint-disable */
 import React, { useState } from "react"
+import { useTranslation } from "react-i18next";
+
 const Contact = () => {
-    const [val,setVal] = useState("");
+    const [val, setVal] = useState("");
     const handleChange = (e) => {
         setVal(e.target.value);
     }
+    const { t } = useTranslation();
+
     const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.356936327154!2d28.818248699999998!3d41.01744629999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa48b7bd17cab%3A0x6ef441b02f1b7e5f!2sBeyaz%20Rezidans!5e0!3m2!1str!2str!4v1716404016886!5m2!1str!2str" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
     return (
         <section className="contact">
@@ -12,8 +16,8 @@ const Contact = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <h1 className="page-title">İletişim</h1>
-                            <h2 className="page-description">İletişim</h2>
+                            <h1 className="page-title">{t('contact')}</h1>
+                            <h2 className="page-description">{t('contact')}</h2>
                         </div>
                     </div>
                 </div>
@@ -25,22 +29,22 @@ const Contact = () => {
                             <div className="row">
                                 <div className="col-lg-4">
                                     <div className="contact-item">
-                                        <i className="fas fa-envelope"></i>
+                                        <i className="fas fa-envelope mb-3"></i>
                                         <h5>Mail</h5>
                                         <h6>info@oztopcularhafriyat.com.tr</h6>
                                     </div>
                                 </div>
                                 <div className="col-lg-4">
                                     <div className="contact-item">
-                                        <i className="fas fa-map-marker-alt"></i>
-                                        <h5>Adres</h5>
+                                        <i className="fas fa-map-marker-alt mb-3"></i>
+                                        <h5>{t('adres')}</h5>
                                         <h6>Yenibosna Merkez Mah. 29 Ekim Caddesi No:43 D:40 Beyaz Residence Bahçelievler</h6>
                                     </div>
                                 </div>
                                 <div className="col-lg-4">
                                     <div className="contact-item">
-                                        <i className="fas fa-phone-alt"></i>
-                                        <h5>Telefon</h5>
+                                        <i className="fas fa-phone-alt mb-3"></i>
+                                        <h5>{t('tel')}</h5>
                                         <h6>0212 462 86 30</h6>
                                         <h6>0212 436 01 68</h6>
                                     </div>
@@ -52,23 +56,23 @@ const Contact = () => {
                         <div className="col-lg-12">
                             <div className="row mt-5">
                                 <div className="col-lg-6">
-                                    <label>Ad & Soyad</label>
+                                    <label>{t('ad')}</label>
                                     <input type="text" className="inp-contact" />
                                 </div>
                                 <div className="col-lg-6">
-                                    <label>Telefon</label>
+                                    <label>{t('tel')}</label>
                                     <input type="text" className="inp-contact" />
                                 </div>
                                 <div className="col-lg-12">
-                                    <label>Konu</label>
+                                    <label>{t('subject')}</label>
                                     <input onChange={handleChange} type="text" className="inp-contact" />
                                 </div>
                                 <div className="col-lg-12">
-                                    <label>Mesaj</label>
+                                    <label>{t('mesaj')}</label>
                                     <textarea type="text" className="ta-contact" rows="4"></textarea>
                                 </div>
                                 <div className="col-lg-12">
-                                    <button className="btn-contact" disabled={val && val ? false : true} data-toggle="modal" data-target="#exampleModal">Gönder</button>
+                                    <button className="btn-contact" disabled={val && val ? false : true} data-toggle="modal" data-target="#exampleModal">{t('gönder')}</button>
                                 </div>
                             </div>
                         </div>

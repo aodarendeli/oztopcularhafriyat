@@ -1,10 +1,20 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     console.log(isNavCollapsed);
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
+
+    const { t, i18n } = useTranslation();
+    const [type, setType] = useState('tr');
+
+    useEffect(() => {
+        i18n.changeLanguage(type);
+    }, [type])
+
     return (
         <div className="header">
             <div className="container">
@@ -27,22 +37,27 @@ const Header = () => {
                         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/">Anasayfa</Link>
+                                    <Link className="nav-link" to="/">{t('Home')}</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/blog">Blog</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/about">Hakkımızda</Link>
+                                    <Link className="nav-link" to="/about">{t('about')}</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="#">Hizmetlerimiz <i className="fas fa-chevron-down"></i></Link>
+                                    <Link className="nav-link" to="#">{t('service')} <i className="fas fa-chevron-down"></i></Link>
                                     <ul className="sub-ul">
-                                        <li><Link to="/arac-parkuru">Araç Parkuru</Link></li>
+                                        <li><Link to="/arac-parkuru">{t('car')}</Link></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/contact">İletişim</Link>
+                                    <Link className="nav-link" to="/contact">{t('contact')}</Link>
+                                </li>
+                                <li>
+                                    <div className="nav-link mt-1" style={{ cursor: 'pointer' }}>
+                                        {type === 'tr' ? <img width={'30px'} src='/img/turkey.png' alt="tukey" onClick={() => setType('en')} /> : <img width={'30px'} src='/img/eng.png' onClick={() => setType('tr')} alt="eng" />}
+                                    </div>
                                 </li>
                             </ul>
                         </div>

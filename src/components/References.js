@@ -5,13 +5,16 @@ import ReferenceItem2 from "./ReferenceItem/ReferenceItem2"
 import ReferenceItem3 from "./ReferenceItem/ReferenceItem3"
 import ReferenceItem4 from "./ReferenceItem/ReferenceItem4"
 import ReferenceItem5 from "./ReferenceItem/ReferenceItem5"
+import { useTranslation } from "react-i18next";
 
 
 
 const References = () => {
+    const { t } = useTranslation();
+
     const title = {
-        text: "Referanslarımız",
-        description: "Sektörün Önde Gelenlerindeniz."
+        text: t('reference'),
+        description: t('sektör')
     }
     const settings = {
         infinite: true,
@@ -51,8 +54,8 @@ const References = () => {
                             <ReferenceItem />
                             <ReferenceItem2 />
                             <ReferenceItem3 />
-                            <ReferenceItem4 />  
-                            <ReferenceItem5 />   
+                            <ReferenceItem4 />
+                            <ReferenceItem5 />
                         </Slider>
                     </div>
                 </div>

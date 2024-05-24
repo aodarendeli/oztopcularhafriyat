@@ -1,18 +1,21 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Subscribe = () => {
-    const [val,setVal] = useState("");
+    const [val, setVal] = useState("");
     const handleChange = (e) => {
         setVal(e.target.value);
     }
+    const { t } = useTranslation();
+
     return (
         <>
             <section className="section-subscribe pt-5 pb-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <p className="title">Merak Ettikleriniz İçin</p>
-                            <span className="sbs-description">Bize Mail Atabilirsiniz</span>
+                            <p className="title">{t('merak')}</p>
+                            <span className="sbs-description">{t('mail')}</span>
                         </div>
                         <div className="col-lg-6">
                             <div className="d-flex align-items-center justify-content-between w-100 h-100">
@@ -21,7 +24,7 @@ const Subscribe = () => {
                                         <input onChange={handleChange} type="text" className="w-100 sbs-area-inp" />
                                     </div>
                                     <div className="col-lg-3 d-flex align-items-center justify-content-between ">
-                                        <input type="submit" className="w-100 h-100 btn btn-dark" disabled={val && val ? false : true} value="Gönder" data-toggle="modal" data-target="#exampleModal" />
+                                        <input type="submit" className="w-100 h-100 btn btn-dark" disabled={val && val ? false : true} value={t('gönder')} data-toggle="modal" data-target="#exampleModal" />
                                     </div>
                                 </div>
                             </div>
@@ -41,10 +44,10 @@ const Subscribe = () => {
                             </button>
                         </div>
                         <div className="modal-body">
-                            Mailiniz başarıyla gönderilmiştir...
+                            {t('mailsuc')}
                         </div>
                         <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal">{t('close')}</button>
                         </div>
                     </div>
                 </div>

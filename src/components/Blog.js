@@ -1,7 +1,9 @@
 import BlogItem from "./BlogItem"
-import blog from './blog.json'
+import { useTranslation } from "react-i18next";
+
 
 const Blog = () => {
+    const { t } = useTranslation();
     return (
         <section className="blog">
             <div className="page-top">
@@ -17,21 +19,8 @@ const Blog = () => {
             <div className="page-content">
                 <div className="container">
                     <div className="row">
-                        {
-                            blog.map(item => (
-                                <>
-                                    <BlogItem  item={item} link="blog-1" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
-                                </>
-                            ))
-                        }
-                        {/* <BlogItem link="blog-2" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
-                        <BlogItem link="blog-3" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
-                        <BlogItem link="blog-4" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
-                        <BlogItem link="blog-5" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
-                        <BlogItem link="blog-6" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
-                        <BlogItem link="blog-7" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
-                        <BlogItem link="blog-8" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
-                        <BlogItem link="blog-9" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/> */}
+                        <BlogItem date={"24:05:2024"} command={0} text={t('oztopcular')} img="https://cdn.pixabay.com/photo/2016/11/29/04/15/digger-1867268_1280.jpg" title={t('building')} textdetail={t('ozex1')} link="blog-1" />
+                        <BlogItem date={"24:05:2024"} command={0} text={t('yakit')} img="https://cdn.pixabay.com/photo/2016/11/21/16/37/loader-1846346_1280.jpg" title={t('yakit')} textdetail={t('ozex2')} link="blog-1" />
                     </div>
                 </div>
             </div>
