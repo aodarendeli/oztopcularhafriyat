@@ -18,17 +18,12 @@ const Header = () => {
     return (
         <div className="header">
             <div className="container">
-                <nav className="navbar navbar-expand-lg navbar-light mt-3 mb-3">
+                <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid">
                         <Link className="navbar-brand" to="/">
                             <div className="d-flex align-items-center">
                                 {/* <i className="fas fa-home"></i> */}
-                                {/* <img width={'200px'} src="/img/references/logo.jpeg" />  */}
-                                <span className="ms-2 text-center header-text">
-                                    Oztopcular
-                                    <br />
-                                    Hafriyat
-                                </span>
+                                <img width={'200px'} src="/img/logo.png" /> 
                             </div>
                         </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>

@@ -12,7 +12,7 @@
   padding: 0;
 }
 .header{
-  background-color: transparent;
+  background-color: white;
 }
 .header-text {
   font-family: 'Montserrat';
@@ -763,4 +763,39 @@ section {
 
 .toast:not(.showing):not(.show) {
   opacity: 1;
+}
+
+.carousel .slide .legend{
+  top: 50% !important;
+}
+
+@media (max-width:600px) {
+  .carousel-info{
+    position: absolute;
+    top: 40% !important;
+    font-size: 14px;
+    left: 10% !important;
+    color: white;
+  }
+  .carousel-info h2,h5{
+    font-size: 14px;
+  }
+  .carousel-slider{
+    height: auto !important;
+  }
+}
+
+.carousel-slider {
+  height: 600px;
+}
+
+.carousel-info {
+  position: absolute;
+  top: 20%;
+  font-size: 14px;
+  left: 40%;
+  color: white;
+}
+.thumbs-wrapper{
+  text-align: center !important;
 }

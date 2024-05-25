@@ -17,9 +17,11 @@ const References = () => {
         description: t('sektör')
     }
     const settings = {
+        cssEase: "linear",
         infinite: true,
-        speed: 1500,
+        speed: 500,
         slidesToShow: 4,
+        
         slidesToScroll: 1,
         autoPlay: true,
         arrows: true,
