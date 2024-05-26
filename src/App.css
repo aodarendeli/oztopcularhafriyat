@@ -266,6 +266,9 @@
 .footer-info-item{
   width: 25px;
 }
+.footer-info-item span a{ 
+  color: #393a42 !important;
+}
 .subscribe-area{
   background-color: white;
   padding: 5px 10px;
@@ -417,7 +420,7 @@ section {
   display: flex;
   justify-content: center;
 }
-.team .social-item{
+.team .social-item {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -430,6 +433,9 @@ section {
   background: #525659;
   color: white;
   transition: 0.3s;
+}
+.team .social-item a{
+  color: white;
 }
 
 .team:hover .team-info{
@@ -445,6 +451,9 @@ section {
 .team:hover .social-item{
   background: white;
   color: #525659;
+}
+.team:hover .social-item a{
+  color: #525659 !important;
 }
 
 .section-references{
@@ -798,4 +807,96 @@ section {
 }
 .thumbs-wrapper{
   text-align: center !important;
+}
+
+.iconbox-whyus.iconbox.style5 {
+  text-align: center;
+  box-shadow: 0 0 5px 3px #d9d9d9;
+  padding: 55px 38px 46px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  min-height: 300px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+.iconbox-whyus.iconbox.style5 .iconbox-icon {
+  font-size: 42px;
+  color: red;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.iconbox-content {
+  display: inline-block;
+  position: relative;
+  margin: 10px auto;
+  width: 100%;
+}
+.iconbox-whyus.iconbox.style5 .iconbox-content {
+  margin-top: 18px;
+}
+.iconbox-content h5.heading {
+  line-height: 36px;
+  font-weight: 500;
+  color: #0d0d0d;
+  padding: 4px 0 0 0;
+  letter-spacing: -0.4px;
+}
+.iconbox-whyus.iconbox.style5 .iconbox-content h5.heading {
+  letter-spacing: unset;
+}
+.iconbox-whyus.iconbox.style5 .iconbox-content p {
+  color: #636363;
+  margin-top: 2px;
+  margin: 2px 0 18px 0;
+}
+.iconbox-whyus.iconbox.style5 .iconbox-content > a {
+  color: red;
+  font-size: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.heading span {
+  color: #636363;
+  font-weight: bold;
+}
+.iconbox-whyus.iconbox.style5 .iconbox-content > a:after {
+  content: '>';
+  padding-left: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.iconbox-whyus.iconbox.style5 .iconbox-content > a:hover {
+  color: #636363;
+}
+
+.iconbox-whyus.iconbox.style5:hover {
+  box-shadow: 0 0 10px 10px #d9d9d9;
+}
+.iconbox-whyus.iconbox.style5:hover .iconbox-icon {
+  -webkit-transform: rotateY(150deg);
+  -moz-transform: rotateY(150deg);
+  -ms-transform: rotateY(150deg);
+  -o-transform: rotateY(150deg);
+  transform: rotateY(150deg);
+}
+a:hover, a:focus {
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }

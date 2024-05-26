@@ -38,7 +38,7 @@ const Header = () => {
                                     <Link className="nav-link" to="/blog">Blog</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/about">{t('about')}</Link>
+                                    <Link className="nav-link" to="/hakkımızda">{t('about')}</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="#">{t('service')} <i className="fas fa-chevron-down"></i></Link>
@@ -47,7 +47,7 @@ const Header = () => {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/contact">{t('contact')}</Link>
+                                    <Link className="nav-link" to="/iletisim">{t('contact')}</Link>
                                 </li>
                                 <li>
                                     <div className="nav-link mt-1" style={{ cursor: 'pointer' }}>

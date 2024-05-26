@@ -10,36 +10,36 @@ const Banner = () => {
     return (
         <Carousel showArrows={true} autoPlay={true} swipeable={true} interval="1500" infiniteLoop>
             <div>
-                <img src="https://img.freepik.com/free-photo/aerial-drone-vi…-ships-sea-port-multiple-buildings_1268-24414.jpg" />
+                <img src="https://kupsmedya.com/wp-content/uploads/2023/08/vadi-istanbul-photo-07.jpg" />
                 <div className="carousel-info">
                     <h3>{t('sektör')}</h3>
                     <h5>{t('info')}</h5>
-                    <Link to="/contact" className="btn btn-secondary">{t('contact')}</Link>
+                    <Link to="/iletisim" className="btn btn-secondary">{t('contact')}</Link>
                 </div>
 
             </div>
             <div>
-                <img src="https://img.freepik.com/free-photo/aerial-drone-vi…-ships-sea-port-multiple-buildings_1268-24414.jpg" />
+                <img src="https://cdn.pixabay.com/photo/2021/07/18/05/44/excavation-6474682_1280.jpg" />
                 <div className="carousel-info">
                     <h3>{t('sektör')}</h3>
                     <h5>{t('info')}</h5>
-                    <Link to="/contact" className="btn btn-secondary">{t('contact')}</Link>
+                    <Link to="/iletisim" className="btn btn-secondary">{t('contact')}</Link>
                 </div>
             </div>
             <div>
-                <img src="https://img.freepik.com/free-photo/aerial-drone-vi…-ships-sea-port-multiple-buildings_1268-24414.jpg" />
+                <img src="https://annebulusmalari.com/wp-content/uploads/2019/10/capacity.jpg" />
                 <div className="carousel-info">
                     <h3>{t('sektör')}</h3>
                     <h5>{t('info')}</h5>
-                    <Link to="/contact" className="btn btn-secondary">{t('contact')}</Link>
+                    <Link to="/iletisim" className="btn btn-secondary">{t('contact')}</Link>
                 </div>
             </div>
             <div>
-                <img src="https://img.freepik.com/free-photo/aerial-drone-vi…-ships-sea-port-multiple-buildings_1268-24414.jpg" />
+                <img src="https://www.birlesim.com/files/projeler/avm/tm/axis/axis_1.jpg" />
                 <div className="carousel-info">
                     <h3>{t('sektör')}</h3>
                     <h5>{t('info')}</h5>
-                    <Link to="/contact" className="btn btn-secondary">{t('contact')}</Link>
+                    <Link to="/iletisim" className="btn btn-secondary">{t('contact')}</Link>
                 </div>
             </div>
         </Carousel>

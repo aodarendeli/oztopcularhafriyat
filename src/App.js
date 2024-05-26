@@ -17,8 +17,8 @@ function App() {
       <div className="App">
         <Header/>
         <Route path="/" exact component={Home}></Route>
-        <Route path="/contact"  component={Contact}></Route>
-        <Route path="/about"  component={About}></Route>
+        <Route path="/iletisim"  component={Contact}></Route>
+        <Route path="/hakkımızda"  component={About}></Route>
         <Route path="/blog" exact component={Blog}></Route>
         <Route path="/arac-parkuru" exact component={CarParkur}></Route>
         <Route path="/blog/:id"  component={BlogDetail}></Route>

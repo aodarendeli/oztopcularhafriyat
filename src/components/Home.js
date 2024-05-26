@@ -4,11 +4,13 @@ import TeamList from "./TeamList"
 import References from "./References"
 import Subscribe from "./Subscribe"
 import BestFlatList from "./BestFlatList"
+import Faaliyet from "./Faaliyet"
 
 const Home=()=>{
     return (
         <React.Fragment>
             <Banner/>
+            <Faaliyet />
             <BestFlatList/>
             <Subscribe/>
             <TeamList/>

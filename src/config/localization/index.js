@@ -9,6 +9,7 @@ i18n
         resources: {
             tr: {
                 translations: {
+                    "hafriyat": "Öztopcular Hafriyat",
                     "Home": "Ana Sayfa",
                     "Shopping": "Alışveriş",
                     "Campaign": "Kampanyalar",
@@ -53,10 +54,14 @@ i18n
                     "ad": "Ad & Soyad",
                     "subject": "Konu",
                     "mesaj": "Mesaj",
+                    "new1": " akaryakıt satış ve işletmeciliği, sigorta ve aracılık hizmetleri, danışmanlık, iç ve dış ticaret, petrol ve türevleri...",
+                    "new2": "Dünya ve ülkemizin giderek artan enerji ihtiyacının karşılanmasına yönelik Uluslar arası ve bölgesel çalışmaların değerlendirilmesi….",
+
                 }
             },
             en: {
                 translations: {
+                    "hafriyat": "Öztopcular Excavation",
                     "Home": "Home",
                     "Shopping": "Shopping",
                     "Campaign": "Campaign",
@@ -73,7 +78,7 @@ i18n
                     "energy": "Energy",
                     "oz1": "Oztopcular, we operate in the fields of fuel sales and management, insurance and brokerage services, consultancy and trade.",
                     "oz2": "We work in the fields of evaluating international and regional studies for the increasing energy needs of the world and our country.",
-                    "oz3": "We provide the most reliable service for you in the field of Oztopcular Fuel Oil, operating in our Istanbul regions.",
+                    "oz3": "We provide the most reliable service for you in the field of Oztopcular Fuel Oil, operating in our Istanbul regions for your business.",
                     "oz4": "As Oztopcular, we provide you with the most practical and best service with our various vehicles and work machines, and we have a number of activities in this field in the sector.",
                     "yakit": "Fuel Distribution",
                     "merak": "For Your Questions",
@@ -101,6 +106,9 @@ i18n
                     "ad": "Name & Surname",
                     "subject": "Subject",
                     "mesaj": "Message",
+                    "new1": "Fuel sales and management, insurance and brokerage services, consultancy, domestic and foreign trade, petroleum and derivatives.",
+                    "new2": "Evaluation of international and regional studies aimed at meeting the increasing energy needs of the world and our country...",
+
                 }
             }
         },
